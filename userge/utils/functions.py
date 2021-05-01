@@ -156,7 +156,7 @@ def check_owner(func):
                 pass
         else:
             await c_q.answer(
-                "Only My Master can Access This !!\n\n     𝘿𝙚𝙥𝙡𝙤𝙮 𝙮𝙤𝙪𝙧 𝙤𝙬𝙣 𝙐𝙎𝙀𝙍𝙂𝙀-𝙓",
+                "Button kya dabta h sale\n\n Itna hi shauk h to khud ka Userbot bana na bsdk😒😒",
                 show_alert=True,
             )
 
