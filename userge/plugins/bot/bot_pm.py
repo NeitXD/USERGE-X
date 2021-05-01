@@ -181,14 +181,13 @@ if userge.has_bot:
         else:
             start_msg = f"""
 Hello 👋 {from_user.fname},
-Nice To Meet You !, I'm <b>{bot_.fname}</b> A Bot.
+Nice To Meet You !, I'm <b>𝓝𝓮𝓲𝓽'𝓼 𝓐𝓼𝓼𝓲𝓼𝓽𝓪𝓷𝓽</b>
 
-        <b><i>Powered by</i> [USERGE-X](https://t.me/x_xtests)
-
-My Master is : {owner_.flname}</b>
+My Master <b>{owner_.flname}</b> Is a very busy person...To check all his dm's and pm's
+So you can use this bot to contact him
 """
             if Config.BOT_FORWARDS:
-                start_msg += "<b>\n📌 NOTE:</b>\nYou can 📨 <b>Send Message</b> here to contact my <b>Master.</b>"
+                start_msg += "<b>\n📌 NOTE:</b>\nAll your messages 📨 <b>Will be forwarded to @NeitXD</b>"
             contact_url = (
                 f"https://t.me/{owner_.uname}"
                 if owner_.uname
@@ -196,8 +195,7 @@ My Master is : {owner_.flname}</b>
             )
             btns = [
                 [
-                    InlineKeyboardButton("👤  CONTACT", url=contact_url),
-                    InlineKeyboardButton("⭐️  REPO", url=Config.UPSTREAM_REPO),
+                    InlineKeyboardButton("👑OWNER👑", url=contact_url),
                 ]
             ]
         try:
