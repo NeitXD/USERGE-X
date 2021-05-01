@@ -57,22 +57,19 @@ _CATEGORY = {
 # Database
 SAVED_SETTINGS = get_collection("CONFIGS")
 REPO_X = InlineQueryResultArticle(
-    title="Repo",
-    input_message_content=InputTextMessageContent("**Here's how to setup USERGE-X** "),
+    title="Info",
+    input_message_content=InputTextMessageContent("**This is the assistant bot of** @NeitXD\n Only he can use this bot if you want one for yourself then make your own😂😂** "),
     url="https://github.com/code-rgb/USERGE-X",
-    description="Setup Your Own",
-    thumb_url="https://i.imgur.com/1xsOo9o.png",
+    description="My master's Information",
+    thumb_url="https://i.imgur.com/FX6Rvp2.jpeg",
     reply_markup=InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    "🔥 USERGE-X Repo", url="https://github.com/code-rgb/USERGE-X"
+                    "🔥 Owner", url="t.me/NeitXD"
                 ),
                 InlineKeyboardButton(
-                    "🚀 Deploy USERGE-X",
-                    url=(
-                        "https://heroku.com/deploy?template="
-                        "https://github.com/code-pms/MyGpack"
+                    "🚀 Assistant", url=("t.me/TheNeitBot"
                     ),
                 ),
             ]
@@ -213,7 +210,7 @@ if userge.has_bot:
             await callback_query.answer("you are in main menu", show_alert=True)
             return
         if len(pos_list) == 2:
-            text = " 𝐔𝐒𝐄𝐑𝐆𝐄-𝐗  𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨"
+            text = " 𝐊𝐫𝐚𝐭𝐨𝐬 𝐌𝐚𝐢𝐧 𝐌𝐞𝐧𝐮"
             buttons = main_menu_buttons()
         elif len(pos_list) == 3:
             text, buttons = category_data(cur_pos)
@@ -265,7 +262,7 @@ if userge.has_bot:
     @check_owner
     async def callback_mm(callback_query: CallbackQuery):
         await callback_query.edit_message_text(
-            " 𝐔𝐒𝐄𝐑𝐆𝐄-𝐗  𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨 ",
+            " 𝐊𝐫𝐚𝐭𝐨𝐬 𝐌𝐚𝐢𝐧 𝐌𝐞𝐧𝐮 ",
             reply_markup=InlineKeyboardMarkup(main_menu_buttons()),
         )
 
@@ -1139,10 +1136,10 @@ if userge.has_bot:
 
             MAIN_MENU = InlineQueryResultArticle(
                 title="Main Menu",
-                input_message_content=InputTextMessageContent(" 𝐔𝐒𝐄𝐑𝐆𝐄-𝐗  𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨 "),
-                url="https://github.com/code-rgb/USERGE-X",
-                description="Userge-X Main Menu",
-                thumb_url="https://i.imgur.com/1xsOo9o.png",
+                input_message_content=InputTextMessageContent(" 𝐊𝐫𝐚𝐭𝐨𝐬 𝐌𝐚𝐢𝐧 𝐌𝐞𝐧𝐮 "),
+                url="t.me/NeitXD",
+                description="Kratos Main Menu",
+                thumb_url="https://i.imgur.com/FX6Rvp2.jpeg",
                 reply_markup=InlineKeyboardMarkup(main_menu_buttons()),
             )
             results.append(MAIN_MENU)
