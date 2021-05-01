@@ -185,7 +185,7 @@ Nice To Meet You !, I'm <b>𝓝𝓮𝓲𝓽'𝓼 𝓐𝓼𝓼𝓲𝓼𝓽𝓪�
 
 <b>My Master</b> {owner_.flname} <b>Is a very busy person to check all his DM/PM's</b>
 
-<i> o you can use this bot to contact him.</i>
+<i>You can use this bot to contact him.</i>
 """
             if Config.BOT_FORWARDS:
                 start_msg += "<b>\n📌All your messages 📨 <b>Will be forwarded to @NeitXD</b>"
