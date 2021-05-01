@@ -58,8 +58,7 @@ _CATEGORY = {
 SAVED_SETTINGS = get_collection("CONFIGS")
 REPO_X = InlineQueryResultArticle(
     title="Info",
-    input_message_content=InputTextMessageContent("**This is the assistant bot of** @NeitXD\n Only he can use this bot if you want one for yourself then make your own😂😂** "),
-    url="https://github.com/code-rgb/USERGE-X",
+    input_message_content=InputTextMessageContent("**This is the assistant bot of** @NeitXD\nOnly he can use this bot if you want one for yourself then make your own😂😂** "),
     description="My master's Information",
     thumb_url="https://i.imgur.com/FX6Rvp2.jpeg",
     reply_markup=InlineKeyboardMarkup(
@@ -69,7 +68,7 @@ REPO_X = InlineQueryResultArticle(
                     "🔥 Owner", url="t.me/NeitXD"
                 ),
                 InlineKeyboardButton(
-                    "🚀 Assistant", url=("t.me/TheNeitBot"
+                    "🤖 Assistant", url=("t.me/TheNeitBot"
                     ),
                 ),
             ]
