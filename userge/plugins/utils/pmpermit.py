@@ -24,9 +24,11 @@ PMPERMIT_MSG = {}
 pmCounter: Dict[int, int] = {}
 allowAllFilter = filters.create(lambda _, __, ___: Config.ALLOW_ALL_PMS)
 noPmMessage = bk_noPmMessage = (
-    "Hello {fname} this is an automated message\n"
-    "Please wait until you get approved to direct message "
-    "And please dont spam until then "
+    "──▄█▀█▄─────────██\n▄████████▄───▄▀█▄▄▄▄\n██▀▼▼▼▼▼─▄▀──█▄▄\n█████▄▲▲▲─▄▄▄▀───▀▄\n██████▀▀▀▀─▀────────▀▀\n"
+    "Hello {fname} this is an automated message🤖\n"
+    "__As we can see you have found your way here to my master's inbox__❗️\n"
+    "**This message won't be seen or responded❗️**"
+    "__If you wanna contact my Master you can use @TheNeitBot⚡️__"
 )
 blocked_message = bk_blocked_message = "**You were automatically blocked**"
 
@@ -287,7 +289,7 @@ async def uninvitedPmHandler(message: Message):
             pmCounter[message.from_user.id] += 1
             await message.reply(
                 f"You have {pmCounter[message.from_user.id]} out of 4 **Warnings**\n"
-                "Please wait until you get approved to pm !",
+                "You will be automatically blocked after this",
                 del_in=5,
             )
     else:
@@ -295,7 +297,7 @@ async def uninvitedPmHandler(message: Message):
         PMPERMIT_MSG[message.from_user.id] = (
             await message.reply(
                 noPmMessage.format_map(SafeDict(**user_dict))
-                + "\n`- Protected by USERGE-X`"
+                + "\n`- Secured & Protected`"
             )
         ).message_id
         await asyncio.sleep(1)
