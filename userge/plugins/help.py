@@ -57,8 +57,8 @@ _CATEGORY = {
 # Database
 SAVED_SETTINGS = get_collection("CONFIGS")
 REPO_X = InlineQueryResultArticle(
-    title="Info",
-    input_message_content=InputTextMessageContent("**This is the assistant bot of** @NeitXD\nOnly he can use this bot if you want one for yourself then make your own😂😂** "),
+    title="About",
+    input_message_content=InputTextMessageContent("**This is the assistant bot of @NeitXD**\n\n`This Bot can be used by him only`\n__You can start this bot to contact my master__ "),
     description="My master's Information",
     thumb_url="https://i.imgur.com/FX6Rvp2.jpeg",
     reply_markup=InlineKeyboardMarkup(
