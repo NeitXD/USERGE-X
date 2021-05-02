@@ -59,7 +59,7 @@ SAVED_SETTINGS = get_collection("CONFIGS")
 REPO_X = InlineQueryResultArticle(
     title="About",
     input_message_content=InputTextMessageContent("**This is the assistant bot of @NeitXD**\n\n`This Bot can be used by him only`\n__You can start this bot to contact my master__ "),
-    description="My master's Information",
+    description="Bot Information",
     thumb_url="https://i.imgur.com/FX6Rvp2.jpeg",
     reply_markup=InlineKeyboardMarkup(
         [
@@ -810,7 +810,7 @@ if userge.has_bot:
                     )
                 )
 
-            if string == "repo":
+            if string == "info":
                 results.append(REPO_X)
 
             if len(str_y) == 2 and str_y[0] == "anime":
