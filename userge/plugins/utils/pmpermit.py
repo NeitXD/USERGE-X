@@ -24,11 +24,12 @@ PMPERMIT_MSG = {}
 pmCounter: Dict[int, int] = {}
 allowAllFilter = filters.create(lambda _, __, ___: Config.ALLOW_ALL_PMS)
 noPmMessage = bk_noPmMessage = (
-    "──▄█▀█▄─────────██\n▄████████▄───▄▀█▄▄▄▄\n██▀▼▼▼▼▼─▄▀──█▄▄\n█████▄▲▲▲─▄▄▄▀───▀▄\n██████▀▀▀▀─▀────────▀▀\n"
+    "──▄█▀█▄─────────██\n▄████████▄───▄▀█▄▄▄▄\n██▀▼▼▼▼▼─▄▀──█▄▄\n█████▄▲▲▲─▄▄▄▀───▀▄\n██████▀▀▀▀─▀────────▀▀\n______________________________________________\n"
     "Hello {fname} this is an automated message🤖\n"
-    "__As we can see you have found your way here to my master's inbox__❗️\n"
+    "__As we can see you have found your way here to my master's inbox__❗️\n\n"
     "**This message won't be seen or responded❗️**"
     "__If you wanna contact my Master you can use @TheNeitBot⚡️__"
+    "<a href="https://telegra.ph/file/313794478c4c9c3a738b0.mp4"> </a>"
 )
 blocked_message = bk_blocked_message = "**You were automatically blocked**"
 
