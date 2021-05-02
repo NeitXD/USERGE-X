@@ -31,9 +31,9 @@ _COMMANDS = {
         "help_txt": "**Ask for opinion via inline**\nYou can now send multiple opinion messages at once\n**Note: **All button data is cleared as soon as you restart or update the bot\n\n>>>  `op [Question or Statement]`",
         "i_q": "op Are Cats Cute ?",
     },
-    "repo": {
-        "help_txt": "**Your USERGE-X Github repo**\nwith direct deploy button\n\n>>>  `repo`",
-        "i_q": "repo",
+    "Info": {
+        "help_txt": "**Information about the bot**\n\n>>>  `info`",
+        "i_q": "info",
     },
     "gapps": {
         "help_txt": "**Lastest arm64 Gapps for <u>Android 10 Only !</u>**\nChoose from Niksgapps, Opengapps and Flamegapps\n\n>>>  `gapps`",
