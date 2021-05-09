@@ -83,7 +83,7 @@ async def add_sudo(message: Message):
                 {"_id": user["id"], "men": user["mention"]}
             ),
             message.edit(
-                f"user : `{user['id']}` added to **SUDO**!", del_in=5, log=__name__
+                f"user : `{user['id']}` Added to **SUDO**!\n Mauj kar🤣🤣", del_in=5, log=__name__
             ),
         )
 
@@ -124,7 +124,7 @@ async def del_sudo(message: Message):
         await asyncio.gather(
             SUDO_USERS_COLLECTION.delete_one({"_id": user_id}),
             message.edit(
-                f"user : `{user_id}` removed from **SUDO**!", del_in=5, log=__name__
+                f"user : `{user_id}` Removed from **SUDO**!\n Chal ab Nikal Bhosdike", del_in=5, log=__name__
             ),
         )
 
