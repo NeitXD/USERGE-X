@@ -64,7 +64,7 @@ async def promote_usr(message: Message):
         if custom_rank:
             await asyncio.sleep(2)
             await message.client.set_administrator_title(chat_id, user_id, custom_rank)
-        await message.edit("`👑 Promoted Successfully..`", del_in=5)
+        await message.edit("`👑 Promoted Successfully..Ab nacho bhencho💃`", del_in=5)
         await CHANNEL.log(
             "#PROMOTE\n\n"
             f"USER: [{get_mem.user.first_name}](tg://user?id={get_mem.user.id}) "
@@ -118,7 +118,7 @@ async def demote_usr(message: Message):
             can_invite_users=False,
             can_pin_messages=False,
         )
-        await message.edit("`🛡 Demoted Successfully..`", del_in=5)
+        await message.edit("`🛡 Demoted Successfully..ab bhag bsdk😈`", del_in=5)
         await CHANNEL.log(
             "#DEMOTE\n\n"
             f"USER: [{get_mem.user.first_name}](tg://user?id={get_mem.user.id}) "
@@ -233,7 +233,7 @@ async def unban_usr(message: Message):
     try:
         get_mem = await message.client.get_chat_member(chat_id, user_id)
         await message.client.unban_chat_member(chat_id, user_id)
-        await message.edit("`🛡 Successfully Unbanned..`", del_in=5)
+        await message.edit("`🛡 Successfully Unbanned..ab nacho bhencho`💃", del_in=5)
         await CHANNEL.log(
             "#UNBAN\n\n"
             f"USER: [{get_mem.user.first_name}](tg://user?id={get_mem.user.id}) "
