@@ -19,7 +19,7 @@ CHANNEL = userge.getCLogger(__name__)
     about={
         "header": "Blocks a User!",
         "usage": "{tr}block [ID] or [Reply To User]",
-        "examples": "{tr}block @CharonCB21",
+        "examples": "{tr}block @Username",
     },
 )
 async def block_user(message: Message):
@@ -52,7 +52,7 @@ async def block_user(message: Message):
     about={
         "header": "Unblocks a User!",
         "usage": "{tr}unblock [ID] or [Reply To User]",
-        "examples": "{tr}unblock @CharonCB21",
+        "examples": "{tr}unblock @Username",
     },
 )
 async def unblock_user(message: Message):
